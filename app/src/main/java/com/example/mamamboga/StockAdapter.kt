@@ -25,12 +25,12 @@ class TodoAdapter(
         )
     }
 
-    fun addTodo(todo: ToDo) {
+    fun addStock(todo: ToDo) {
         todos.add(todo)
         notifyItemInserted(todos.size - 1)
     }
 
-    fun deleteDoneTodos() {
+    fun deleteDoneStock() {
         todos.removeAll { todo ->
             todo.isChecked
         }

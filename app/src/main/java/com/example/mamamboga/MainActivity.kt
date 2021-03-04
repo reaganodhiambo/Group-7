@@ -14,19 +14,19 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         todoAdapter = TodoAdapter(mutableListOf())
 
-        rvorderedItems.adapter = todoAdapter
-        rvorderedItems.layoutManager = LinearLayoutManager(this)
+        rvStockItems.adapter = todoAdapter
+        rvStockItems.layoutManager = LinearLayoutManager(this)
 
-        btnAddInventory.setOnClickListener {
-            val todoTitle = etorderTitle.text.toString()
+        btnAddStock.setOnClickListener {
+            val todoTitle = etStockTitle.text.toString()
             if(todoTitle.isNotEmpty()) {
                 val todo = ToDo(todoTitle)
-                todoAdapter.addTodo(todo)
-                etorderTitle.text.clear()
+                todoAdapter.addStock(todo)
+                etStockTitle.text.clear()
             }
         }
         btnDeleteCLearStock.setOnClickListener {
-            todoAdapter.deleteDoneTodos()
+            todoAdapter.deleteDoneStock()
         }
     }
 }
