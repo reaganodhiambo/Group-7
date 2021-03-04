@@ -48,11 +48,11 @@ class TodoAdapter(
     override fun onBindViewHolder(holder: TodoViewHolder, position: Int) {
         val curTodo = todos[position]
         holder.itemView.apply {
-            tvTodoTitle.text = curTodo.title
-            cbDone.isChecked = curTodo.isChecked
-            toggleStrikeThrough(tvTodoTitle, curTodo.isChecked)
-            cbDone.setOnCheckedChangeListener { _, isChecked ->
-                toggleStrikeThrough(tvTodoTitle, isChecked)
+            tvOrderTitle.text = curTodo.title
+            cbClearStock.isChecked = curTodo.isChecked
+            toggleStrikeThrough(tvOrderTitle, curTodo.isChecked)
+            cbClearStock.setOnCheckedChangeListener { _, isChecked ->
+                toggleStrikeThrough(tvOrderTitle, isChecked)
                 curTodo.isChecked = !curTodo.isChecked
             }
         }
