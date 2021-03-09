@@ -10,6 +10,7 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
+
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
@@ -17,7 +18,7 @@
             android:layout_width="404dp"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="MAMA MBOGA POS"
+            android:text="MAMA MBOGA's POS"
             android:textColor="@color/design_default_color_primary_dark" />
 
 
